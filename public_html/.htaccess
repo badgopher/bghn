@@ -1,0 +1,14 @@
+Options +FollowSymLinks
+
+RewriteEngine on
+RewriteCond %{SERVER_PORT} 80 
+RewriteRule ^([bgh]{2}[A-Za-z0-9]{4})$ /go.php?id=$1
+RewriteRule ^privacy$ /privacy.php
+
+Options -Indexes
+DirectoryIndex index.php index.html index.htm
+
+<FilesMatch "\.(nzb|zip|rar|gz)$" >
+ForceType application/octet-stream
+</FilesMatch>
+

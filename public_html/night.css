@@ -1,0 +1,121 @@
+@charset "utf-8";
+body {
+	background-color: #000000;
+	background-image: url(images/Night_Background_Short.jpg);
+	background-repeat: repeat-x;
+	color: #B7B7B7;
+	font-family: Roboto, Verdana, Tahoma, sans-serif;
+	font-size: 1.17rem;
+	margin-top: 0px;
+	margin-bottom: 20px;
+}
+
+a:link {
+	color: #B7B7B7;
+	text-decoration: none;
+}
+
+a:visited {
+	text-decoration: none;
+	color: #999999;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #cba261;
+}
+
+a:active {
+	text-decoration: none;
+	color: #cba261;
+}
+
+
+NewsBoxItems a{
+	display:block;
+	margin:0;
+	width:100%;
+}
+
+boxbody a:hover {
+	background-image:url(images/Night_Hover.png);
+	background-repeat:repeat-x;
+}
+
+
+#PageDecoration{
+	background-image: url(images/Night_Header_Item.png);
+	background-repeat: repeat;
+	height: 80px;
+	width: 74px;
+	position: absolute;
+	right: 35px;
+}
+
+#Mascot{
+	height: 50px;
+	width: 50px;
+	position: absolute;
+	left: 5px;
+	top: 50px;
+}
+
+#TweetBox {	
+font-size: 80%;
+	background-image: url( images/Night_Shade.png );
+	padding: 5px;
+	position: absolute;
+	left: 5px;
+	top: 5px;
+	height: 26px;
+	line-height: 13px;
+	z-index: 1;
+	width: 450px;
+}
+
+.TweetStatus {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+
+	color: #CCC;
+}
+
+#TweetBoxEmbellishment{
+	position: absolute;
+	left: 28px;
+	top: 41px;
+
+}
+
+.Announcement {
+	color: #79a8e3;
+	font-size: 110%
+}
+
+.FooterText{
+	font-size: 0.85rem;
+}
+
+.FeedSiteName{
+	font-size: 125%;
+	font-weight: bold;
+	text-align: center;
+	font-family: Rubik, Verdana, Tahoma, sans-serif;
+	padding-bottom: 0.3rem;
+}
+.NewsBox, .CategoryBox{
+	background-image: url(images/Night_NewsBox_Background.png);
+	background-repeat: repeat-x;
+}
+
+select{
+	background-color: #071525;
+	font-family: Rubik, Verdana, Tahoma, sans-serif;
+	color: #B7B7B7;
+	border: solid #0A1D33 1px;
+	font-size: 100%;
+}
+
+.NewItem{
+	background-image: url(images/Night_NewItem.png);
+	background-size: 100.5%;
+}

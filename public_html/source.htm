@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>BGHN Source Code</title>
+<style type="text/css">
+body,td,th {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 95%;
+	color: #304370;
+}
+body {
+	background-color: #EBEBEB;
+	margin-left: 20px;
+	margin-top: 20px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
+h1,h2,h3,h4,h5,h6 {
+	font-weight: bold;
+}
+h1 {
+	font-size: 115%;
+}
+h2 {
+	font-size: 105%;
+}
+h3 {
+	font-size: 100%;
+}
+blockquote {
+	font-family: "Courier New", Courier, monospace
+}
+</style>
+</head>
+
+<body>
+<p>Hi.  If you are looking for the cobbled together source code for this site, you are in the right place.  If you thought that link would be something else, I'm sorry, go ahead and click back and carry on with your day. </p>
+<h1>First things first.</h1>
+<p>The source code and associated collateral available for download from this page is made available under a <a href="http://opensource.org/licenses/BSD-3-Clause" target="_blank">BSD license</a>. The license is incredibly permissive, and I don't really care what you  do with the source code  as long as you don't use my name (real or otherwise) or the initialism BGHN anywhere on your version of the site.</p>
+<h1>Where's the download?</h1>
+<p>Right <a href="BGHN_Source.zip">here</a>.</p>
+<h1>Okay, now what?</h1>
+<p>Well, that's kinda on you. This site was my hobby, and as such it's not exactly documented or intuitively assembled. I'll give you some pointers, but, well, good luck.</p>
+<h2>The database</h2>
+<p>Like the vast majority of php sites developed by  Internet 1.0 professional webmasters, the database runs on MySQL 5-something. The source .zip file contains 2 SQL scripts -- a schema-only script and a schema &amp; data script. I included the one with data to help give a sense of how the site works (see earlier comment regarding documentation).</p>
+<h2>Initial setup</h2>
+<p>Create the database. Edit dbStringBuilder.php and enter the specifics for your database connection then run the script. Take the resulting string and update the DB_CONNECT definition in inc.config.php.</p>
+<h3>Cron?</h3>
+<p>Cron. There are 2 jobs that  make the site tick:</p>
+<blockquote>
+  <p>*/15 * * * * /path/to/php &quot;/path/to/webroot/parser/import.php&quot;</p>
+  <p>0 0 * * 0 /path/to/php &quot;/path/to/webroot/dbcleanup.php&quot;</p>
+</blockquote>
+<p>The first one runs the process that updates the feeds every 15 minutes. The second one keeps the database from growing into an unwieldy mess.</p>
+<h1>Help!</h1>
+<p>Probably not gonna happen. I mean, you can send an email to bghnsource at badgopher.com and if I can get to it, I'll get to it, but no promises.</p>
+</body>
+</html>

@@ -1,0 +1,53 @@
+@charset "utf-8";
+#PageHeader {
+	float: none;
+	clear: both;
+	width: 75%;
+	padding-top: 100px;
+	margin-bottom: 20px;	
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#PageContentContainer {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.NewsBox{
+	float: left;
+	margin: 15px;
+	width: 460px;
+}
+
+.CategoryBox{
+	clear: both;
+	margin: 15px;
+	width: auto;
+}
+
+
+ul{
+	list-style: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 4px;
+	margin: 0px;
+}
+
+li{
+	line-height: 1.5rem;
+	letter-spacing: 0.01rem;
+	padding-left: 5px;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+#PageFooter{
+	float: none;
+	clear: both;
+	width: 75%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 30px;
+}
